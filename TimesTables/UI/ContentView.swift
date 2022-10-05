@@ -7,15 +7,38 @@
 
 import SwiftUI
 
-struct ContentView: View {
-  var body: some View {
-    VStack {
-      Image(systemName: "globe")
-        .imageScale(.large)
-        .foregroundColor(.accentColor)
-      Text("Hello, world!")
+private extension Tab {
+  @ViewBuilder
+  var view: some View {
+    switch self {
+    case .home:
+      HomeScreen()
+    case .scoreboard:
+      ScoreboardScreen()
     }
-    .padding()
+  }
+}
+
+struct ContentView: View {
+  @State private var selectedTab: Tab = .home
+  
+  @StateObject private var scoreBoard: ScoreBoard = .init()
+
+  var body: some View {
+    NavigationStack {
+      TabView(selection: $selectedTab) {
+        ForEach(Tab.allCases) { tab in
+          tab.view
+            .environmentObject(scoreBoard)
+            .padding()
+            .tabItem {
+              Label(tab.rawValue.capitalized, systemImage: "house")
+            }
+        }
+      }
+      .navigationTitle(selectedTab.rawValue.capitalized)
+      .navigationBarTitleDisplayMode(.inline)
+    }
   }
 }
 
