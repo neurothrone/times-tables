@@ -52,10 +52,8 @@
 		2F065A7F28ED4E7E0015A30E /* TimesTables */ = {
 			isa = PBXGroup;
 			children = (
-				2F065A8028ED4E7E0015A30E /* TimesTablesApp.swift */,
-				2F065A8228ED4E7E0015A30E /* ContentView.swift */,
-				2F065A8428ED4E7E0015A30E /* Assets.xcassets */,
-				2F065A8628ED4E7E0015A30E /* TimesTables.entitlements */,
+				2F065A8F28ED4F5D0015A30E /* App */,
+				2F065A9028ED4F5F0015A30E /* UI */,
 				2F065A8728ED4E7E0015A30E /* Preview Content */,
 			);
 			path = TimesTables;
@@ -67,6 +65,24 @@
 				2F065A8828ED4E7E0015A30E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F065A8F28ED4F5D0015A30E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2F065A8028ED4E7E0015A30E /* TimesTablesApp.swift */,
+				2F065A8428ED4E7E0015A30E /* Assets.xcassets */,
+				2F065A8628ED4E7E0015A30E /* TimesTables.entitlements */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2F065A9028ED4F5F0015A30E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F065A8228ED4E7E0015A30E /* ContentView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TimesTables/TimesTables.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TimesTables/App/TimesTables.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimesTables/Preview Content\"";
@@ -299,7 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = TimesTables/TimesTables.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TimesTables/App/TimesTables.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimesTables/Preview Content\"";
