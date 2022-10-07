@@ -24,6 +24,8 @@
 		2F065AAA28EDA5830015A30E /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F065AA928EDA5830015A30E /* ScoreBoard.swift */; };
 		2F065AAC28EDA6910015A30E /* Question+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F065AAB28EDA6910015A30E /* Question+Preview.swift */; };
 		2F065AB028EDBBF70015A30E /* GameRound+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F065AAF28EDBBF70015A30E /* GameRound+Preview.swift */; };
+		2F065B7728EFFB640015A30E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2F065B7528EFFB640015A30E /* README.md */; };
+		2F065B7828EFFB640015A30E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2F065B7628EFFB640015A30E /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		2F065AA928EDA5830015A30E /* ScoreBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
 		2F065AAB28EDA6910015A30E /* Question+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+Preview.swift"; sourceTree = "<group>"; };
 		2F065AAF28EDBBF70015A30E /* GameRound+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameRound+Preview.swift"; sourceTree = "<group>"; };
+		2F065B7528EFFB640015A30E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2F065B7628EFFB640015A30E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 		2F065A7428ED4E7E0015A30E = {
 			isa = PBXGroup;
 			children = (
+				2F065B7628EFFB640015A30E /* LICENSE */,
+				2F065B7528EFFB640015A30E /* README.md */,
 				2F065A7F28ED4E7E0015A30E /* TimesTables */,
 				2F065A7E28ED4E7E0015A30E /* Products */,
 			);
@@ -190,7 +196,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F065B7728EFFB640015A30E /* README.md in Resources */,
 				2F065A8928ED4E7E0015A30E /* Preview Assets.xcassets in Resources */,
+				2F065B7828EFFB640015A30E /* LICENSE in Resources */,
 				2F065A8528ED4E7E0015A30E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
